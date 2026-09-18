@@ -1,72 +1,78 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - My Resume</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ติดต่อ | นนนน วาสนานนท์</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header>
-        <h1>Contact Us</h1>
+  <header class="site-header">
+    <a href="index.html" class="logo">นนนน วาสนานนท์</a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="เปิดปิดเมนู" aria-expanded="false">&#9776;</button>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="experience.html">ประสบการณ์</a></li>
+        <li><a href="projects.html">ผลงาน</a></li>
+        <li><a href="contact.html" class="active">ติดต่อ</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="experience.html">Experience</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+  <main>
+    <section class="page-head">
+      <h1>ติดต่อ</h1>
+      <p class="tagline">ยินดีรับฟังทุกโอกาสในการร่วมงาน</p>
+    </section>
 
-    <main>
+    <section>
+      <h2>ช่องทางการติดต่อ</h2>
+      <ul class="contact-list">
+        <li>
+          <span class="label">อีเมล</span>
+          <a href="mailto:wnananon@gmail.com">wnananon@gmail.com</a>
+        </li>
+        <li>
+          <span class="label">โทรศัพท์</span>
+          <a href="tel:+66824892575">082-489-2575</a>
+        </li>
+        <li>
+          <span class="label">ที่อยู่</span>
+          <span>99/154 หมู่ 3 ต.ธรรมศาลา อ.เมือง จ.นครปฐม</span>
+        </li>
+      </ul>
+    </section>
 
-        <!-- สมาชิกคนที่ 1 -->
-        <section>
-            <h2>นายชินกร เทพพงษ์ประดิษฐ</h2>
+    <section>
+      <h2>ส่งข้อความถึงผม</h2>
+      <form class="contact-form" action="#" method="POST">
+        <div class="field">
+          <label for="name">ชื่อของคุณ</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="email">อีเมลของคุณ</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+          <label for="message">ข้อความ</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">ส่งข้อความ</button>
+      </form>
+    </section>
+  </main>
 
-            <p>Email: thepphenix@gmail.com</p>
-            <p>Phone: 062-914-4514</p>
-            <p>
-                GitHub:
-                <a href="https://github.com/NepgearNeotopia">
-                    github.com/NepgearNeotopia
-                </a>
-            </p>
-        </section>
+  <footer class="site-footer">
+    <p>&copy; 2026 นนนน วาสนานนท์</p>
+    <p>สร้างด้วย HTML และ CSS</p>
+  </footer>
 
-
-        <!-- สมาชิกคนที่ 2 -->
-        <section>
-            <h2>บูรณ์ภัทร์ บุญสูขเกิด</h2>
-
-            <p>Email: boonskkued_b@silpakorn.edu</p>
-            <p>Phone: 065-416-3697</p>
-            <p>
-                GitHub:
-                <a href="https://github.com/BuraArt">
-                    github.com/BuraArt
-                </a>
-            </p>
-        </section>
-
-
-        <!-- สมาชิกคนที่ 3 -->
-        <section>
-            <h2>สิงหา ฝอยทับทิม</h2>
-
-            <p>Email: kannika5503443@gmail.com</p>
-            <p>Phone: 065-550-3443</p>
-            <p>
-                GitHub:
-                <a href="https://github.com/Singhaf">
-                    github.com/Singhaf
-                </a>
-            </p>
-        </section>
-
-    </main>
-
+  <script src="script.js"></script>
 </body>
 </html>
+
