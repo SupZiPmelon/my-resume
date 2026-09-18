@@ -1,113 +1,130 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experience - My Resume</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ประสบการณ์ | นนนน วาสนานนท์</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header>
-        <h1>Experience</h1>
+  <header class="site-header">
+    <a href="index.html" class="logo">นนนน วาสนานนท์</a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="เปิดปิดเมนู" aria-expanded="false">&#9776;</button>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="experience.html" class="active">ประสบการณ์</a></li>
+        <li><a href="projects.html">ผลงาน</a></li>
+        <li><a href="contact.html">ติดต่อ</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="experience.html">Experience</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+  <main>
+    <section class="page-head">
+      <h1>ประสบการณ์</h1>
+      <p class="tagline">ประวัติการอบรม ทักษะปฏิบัติการ และประวัติการศึกษา</p>
+    </section>
 
-    <main>
+    <section>
+      <h2>การฝึกอบรมและเชิงปฏิบัติการ</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <span class="period">พฤศจิกายน 2568</span>
+          <h3>Using YOLO for Object Detection in Images (รุ่นที่ 8)</h3>
+          <p>อบรมเชิงปฏิบัติการการใช้โมเดล YOLO เพื่อตรวจจับและระบุตำแหน่งวัตถุในรูปภาพ</p>
+        </article>
+        <article class="timeline-item">
+          <span class="period">สิงหาคม 2568</span>
+          <h3>Enhancing Intelligence through the Creative Use of AI (รุ่นที่ 4)</h3>
+          <p>โครงการเพิ่มพูนศักยภาพการเรียนรู้ด้วยการประยุกต์ใช้ AI ในงานเชิงวิศวกรรม</p>
+        </article>
+        <article class="timeline-item">
+          <span class="period">กรกฎาคม 2568</span>
+          <h3>EPI Electronic Circuit Design</h3>
+          <p>อบรมและแลกเปลี่ยนประสบการณ์การออกแบบวงจรอิเล็กทรอนิกส์</p>
+        </article>
+      </div>
+    </section>
 
-        <!-- สมาชิกคนที่ 1 -->
-        <section>
-            <h2>นายชินกร เทพพงษ์ประดิษฐ</h2>
+    <section>
+      <h2>ประวัติการศึกษา</h2>
+      <table class="grade-table">
+        <caption>ระดับการศึกษาและเกรดเฉลี่ยสะสม</caption>
+        <thead>
+          <tr>
+            <th>ระดับ</th>
+            <th>สถาบัน</th>
+            <th>ปีที่ศึกษา</th>
+            <th>เกรดเฉลี่ย</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ปริญญาตรี วิศวกรรมอิเล็กทรอนิกส์และระบบคอมพิวเตอร์</td>
+            <td>มหาวิทยาลัยศิลปากร</td>
+            <td>2566 – ปัจจุบัน</td>
+            <td>2.87</td>
+          </tr>
+          <tr>
+            <td>มัธยมศึกษาตอนปลาย (วิทย์-คณิต)</td>
+            <td>โรงเรียนสารสาสน์วิเทศนครปฐม</td>
+            <td>2559 – 2565</td>
+            <td>จบการศึกษา</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-            <h3>Education</h3>
-            <p>มหาวิทยาลัยศิลปากร</p>
-            <p>
-                คณะวิศวกรรมศาสตร์:
-                สาขาวิศวกรรมอิเล็กทรอนิกส์และระบบคอมพิวเตอร์
-            </p>
+    <section>
+      <h2>รายวิชาที่ทำคะแนนได้ดี</h2>
+      <table class="grade-table">
+        <thead>
+          <tr>
+            <th>รหัสวิชา</th>
+            <th>ชื่อวิชา</th>
+            <th>ภาคการศึกษา</th>
+            <th>เกรด</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>511104</td>
+            <td>Calculus for Engineers I</td>
+            <td>1/2566</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>618223</td>
+            <td>Basic Electrical and Electronic Laboratory</td>
+            <td>1/2567</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>618313</td>
+            <td>Technical Computer Applications</td>
+            <td>1/2568</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>614201</td>
+            <td>Engineering Drawing</td>
+            <td>2/2567</td>
+            <td>B</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
 
-            <h3>Experience</h3>
+  <footer class="site-footer">
+    <p>&copy; 2026 นนนน วาสนานนท์</p>
+    <p>สร้างด้วย HTML และ CSS</p>
+  </footer>
 
-            <article>
-                <h4>Computer Vision รุ่นที่ 1</h4>
-                <p>
-                    จำแนกภาพ: บอกได้ว่าภาพนี้คืออะไร
-                    เช่น คน รถยนต์ หรือสัตว์
-                    ตรวจจับวัตถุ: ชี้ตำแหน่งและตีเส้นรอบวัตถุในภาพ
-                    และจดจำใบหน้า: อ่านและยืนยันตัวตนจากใบหน้า
-                </p>
-            </article>
-
-            <article>
-                <h4>API</h4>
-                <p>
-                    ตัวกลางหรือสะพานเชื่อมที่ช่วยให้โปรแกรมคอมพิวเตอร์
-                    หรือแอปพลิเคชันสองตัวสามารถสื่อสารและแลกเปลี่ยนข้อมูลกันได้
-                </p>
-            </article>
-        </section>
-
-
-        <!-- สมาชิกคนที่ 2 -->
-        <section>
-            <h2>นายบูรณ์ภัทร์ บุญสูขเกิด</h2>
-
-            <h3>Education</h3>
-            <p>มหาวิทยาลัยศิลปากร</p>
-            <p>คณะวิศวกรรมศาสตร์:
-               สาขาวิศวกรรมอิเล็กทรอนิกส์และระบบคอมพิวเตอร์</p>
-
-            <h3>Experience</h3>
-
-            <article>
-                <h4>flutter รุ่นที่ 11</h4>
-                <p> การพัฒนา Android Application ด้วย Flutte การติตั้งโปรแกรมสำหรับพัฒนา Flutter 
-                      การติดตั้งเครื่องโทรศัทพ์จำลอง (Emulator)  การสร้าง Flutter Project
-                      การทดสอบการรัน Project บนเครื่องโทรศัทพ์จำลอง (Emulator)
-                      การทดสอบการรัน Project บนเครื่องโทรศัพท์จริง
-                    </p>
-            </article>
-
-            <article>
-                <h4>รุ่นที่ 13 Mobile Web App</h4>
-                <p>การสร้างเว็บเบื้องต้นด้วย ภาษา html
-                    การตกแต่งหน้าเว็บด้วย CSS
-                </p>
-            </article>
-        </section>
-
-
-        <!-- สมาชิกคนที่ 3 -->
-        <section>
-            <h2>นายสิงหา ฝอยทับทิม</h2>
-
-            <h3>Education</h3>
-            <p>มหาวิทยาลัยศิลปากร</p>
-            <p>คณะวิศวกรรมศาสตร์:
-               สาขาวิศวกรรมอิเล็กทรอนิกส์และระบบคอมพิวเตอร์</p>
-
-            <h3>Experience</h3>
-
-            <article>
-                <h4>การประกอบวงจรอิเล็กทรอนิกส์ลงเเผ่น PCB รุ่นที่3</h4>
-                <p>การประกอบวงจรอิเล็กทรอนิกส์ลงเเผ่นPCB
-                    การใช้งานเครื่องมือพื้นฐาน</p>
-            </article>
-
-            <article>
-                <h4>PLC ร่วมกับ HMI สำหรับระบบอัตโนมัติในอุตสาหกรรม รุ่นที่ 3</h4>
-                <p>การใช้งาน PLC ร่วมกับ HMI สำหรับระบบอัตโนมัติในอุตสาหกรรม</p>
-            </article>
-        </section>
-
-    </main>
-
+  <script src="script.js"></script>
 </body>
 </html>
