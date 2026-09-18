@@ -1,136 +1,102 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - My Resume</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ผลงาน | นนนน วาสนานนท์</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header>
-        <h1>My Projects</h1>
+  <header class="site-header">
+    <a href="index.html" class="logo">นนนน วาสนานนท์</a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="เปิดปิดเมนู" aria-expanded="false">&#9776;</button>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="experience.html">ประสบการณ์</a></li>
+        <li><a href="projects.html" class="active">ผลงาน</a></li>
+        <li><a href="contact.html">ติดต่อ</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="experience.html">Experience</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+  <main>
+    <section class="page-head">
+      <h1>ผลงาน</h1>
+      <p class="tagline">โครงงานภาคปฏิบัติและการประยุกต์ใช้เทคโนโลยีทางวิศวกรรม</p>
+    </section>
 
-    <main>
-
-        <section>
-            <h2>Projects</h2>
-
-            <div class="projects">
-
-                <!-- Project 1 -->
-                <article class="project-card">
-                    <h3>
-                        ระบบบริหารจัดการห้องปฏิบัติการ
-                        และการยืม-คืนอุปกรณ์ผ่าน Web Application
-                    </h3>
-
-                    <p>
-                        <strong>ผู้จัดทำ:</strong>
-                        นายชินกร เทพพงษ์ประดิษฐ
-                    </p>
-
-                    <p>
-                        โปรเจกต์จบสำหรับพัฒนาระบบบริหารจัดการ
-                        ห้องปฏิบัติการและระบบยืม-คืนอุปกรณ์
-                        ผ่าน Web Application
-                    </p>
-
-                    <p>
-                        <strong>ระบบประกอบด้วย:</strong>
-                    </p>
-
-                    <ul>
-                        <li>ระบบ Login และกำหนดสิทธิ์ผู้ใช้งาน</li>
-                        <li>ระบบจัดการข้อมูลห้องปฏิบัติการและอุปกรณ์</li>
-                        <li>ระบบจองห้องปฏิบัติการ</li>
-                        <li>ระบบยืม-คืนอุปกรณ์</li>
-                        <li>ระบบแจ้งเตือนอุปกรณ์เกินกำหนดคืน</li>
-                        <li>Dashboard แสดงข้อมูลสรุปและสถิติ</li>
-                        <li>ระบบรายงานและส่งออกข้อมูลเป็น PDF หรือ Excel</li>
-                    </ul>
-
-                    <p>
-                        <strong>สถานะ:</strong>
-                        กำลังดำเนินการ
-                    </p>
-                </article>
-
-
-                <!-- Project 2 -->
-                <article class="project-card">
-                    <h3>
-                        GPSรถประจำทางเเละกล้องตรวจจับคน
-                    </h3>
-
-                    <p>
-                        <strong>ผู้จัดทำ:</strong>
-                        นาย บูรณ์ภัทร์ บุญสูขเกิด
-                    </p>
-
-                    <p>
-                        GPSรถในมหาลัย ตรวจจับว่ารถอยู่ไหนเเละกล้องตรวจจับว่ามีคนนั่งที่ไหน
-                    </p>
-
-                    <p>
-                        <strong>สถานะ:</strong>
-                        กำลังดำเนินการ
-                    </p>
-                </article>
-
-
-                <!-- Project 3 -->
-                <article class="project-card">
-                    <h3>
-                        ระบบบริหารจัดการห้องปฏิบัติการ
-                        และการยืม-คืนอุปกรณ์ผ่าน Web Application
-                    </h3>
-
-                    <p>
-                        <strong>ผู้จัดทำ:</strong>
-                        นายสิงหา ฝอยทับทิม
-                    </p>
-
-                    <p>
-                        โปรเจกต์จบสำหรับพัฒนาระบบบริหารจัดการ
-                        ห้องปฏิบัติการและระบบยืม-คืนอุปกรณ์
-                        ผ่าน Web Application
-                    </p>
-
-                    <p>
-                        <strong>ระบบประกอบด้วย:</strong>
-                    </p>
-
-                    <ul>
-                        <li>ระบบ Login และกำหนดสิทธิ์ผู้ใช้งาน</li>
-                        <li>ระบบจัดการข้อมูลห้องปฏิบัติการและอุปกรณ์</li>
-                        <li>ระบบจองห้องปฏิบัติการ</li>
-                        <li>ระบบยืม-คืนอุปกรณ์</li>
-                        <li>ระบบแจ้งเตือนอุปกรณ์เกินกำหนดคืน</li>
-                        <li>Dashboard แสดงข้อมูลสรุปและสถิติ</li>
-                        <li>ระบบรายงานและส่งออกข้อมูลเป็น PDF หรือ Excel</li>
-                    </ul>
-
-                    <p>
-                        <strong>สถานะ:</strong>
-                        กำลังดำเนินการ
-                    </p>
-                </article>
-
+    <section>
+      <h2>โครงงานที่ผ่านมา</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <img src="images/project1.jpg" alt="ภาพแผงวงจร Basic Amplifier PCB">
+          <div class="project-body">
+            <h3>Basic Amplifier PCB</h3>
+            <p>
+              ออกแบบ Schematic และ Layout วงจรขยายสัญญาณ กัดแผ่นทองแดง 
+              บัดกรีประกอบชิ้นส่วน และทดสอบการทำงานของวงจรด้วยเครื่องมือวัด
+            </p>
+            <ul class="tech-list">
+              <li>PCB Design</li>
+              <li>Etching</li>
+              <li>Soldering</li>
+            </ul>
+            <div class="project-links">
+              <a href="contact.html">ติดต่อสอบถาม</a>
             </div>
+          </div>
+        </article>
 
-        </section>
+        <article class="project-card">
+          <img src="images/project2.jpg" alt="ภาพการจำลองวงจร">
+          <div class="project-body">
+            <h3>Circuit Simulation & Measurement</h3>
+            <p>
+              จำลองและวิเคราะห์สมรรถนะของวงจรอิเล็กทรอนิกส์ด้วย Proteus และ PSpice 
+              พร้อมประยุกต์ใช้ LabVIEW สำหรับการแสดงผลการวัดเบื้องต้น
+            </p>
+            <ul class="tech-list">
+              <li>Proteus</li>
+              <li>PSpice</li>
+              <li>LabVIEW</li>
+            </ul>
+            <div class="project-links">
+              <a href="contact.html">ติดต่อสอบถาม</a>
+            </div>
+          </div>
+        </article>
 
-    </main>
+        <article class="project-card">
+          <img src="images/project3.jpg" alt="ภาพการตรวจจับวัตถุด้วย YOLO">
+          <div class="project-body">
+            <h3>Object Detection with YOLO</h3>
+            <p>
+              ประยุกต์ใช้โมเดล YOLO เพื่อตรวจจับและจำแนกวัตถุจากไฟล์รูปภาพ 
+              สำหรับการนำไปต่อยอดในระบบประมวลผลภาพอัตโนมัติ
+            </p>
+            <ul class="tech-list">
+              <li>YOLO</li>
+              <li>Python</li>
+              <li>Computer Vision</li>
+            </ul>
+            <div class="project-links">
+              <a href="contact.html">ติดต่อสอบถาม</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
 
+  <footer class="site-footer">
+    <p>&copy; 2026 นนนน วาสนานนท์</p>
+    <p>สร้างด้วย HTML และ CSS</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
